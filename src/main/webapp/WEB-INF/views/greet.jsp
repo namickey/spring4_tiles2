@@ -6,8 +6,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-aaa
+<p>aaa
 あいう
 <c:out value="${name}"/>
+</p>
+<img src="img/dog-puppy.jpeg" style="height:30%;width:30%;" />
 </body>
 </html>
