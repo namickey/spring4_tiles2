@@ -1,18 +1,36 @@
 apply plugin: 'java'
-apply plugin: 'idea'
 apply plugin: 'war'
+apply plugin: 'com.bmuschko.tomcat'
 
 version '1.0'
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'com.bmuschko:gradle-tomcat-plugin:2.3'
+    }
+}
+
 repositories {
     mavenCentral()
+}
+
+tomcat{
+    contextPath = 'demo'
 }
 
 dependencies {
     compile("org.springframework:spring-webmvc:4.3.12.RELEASE")
     compile group: 'javax.servlet', name: 'jstl', version: '1.2'
     providedCompile "javax.servlet:servlet-api:2.5"
+    def tomcatVersion = '8.0.38'
+    tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}",
+            "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}"
 }
