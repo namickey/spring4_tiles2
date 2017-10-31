@@ -7,9 +7,16 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<form:form modelAttribute="registForm" action="regist/regist">
+
+<form:form modelAttribute="registForm">
+<dl>
+  <dt>名前</dt>
+  <dd>
     <form:input path="name" />
-    <button type="submit" name="regist">regist</button>
+    <form:errors path="*"/><br/>
+  </dd>
+</dl>
+<button type="submit" name="ge">登録</button>
 </form:form>
 </body>
 </html>
