@@ -12,23 +12,20 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
 
 @Controller
-public class Regist {
+public class RegistShopController {
+
     @RequestMapping(value = "/regist", method = RequestMethod.GET)
     public String index(Model model){
-        System.out.println("/regist.");
-        model.addAttribute("registForm", new RegistForm());
+        model.addAttribute("registShopForm", new RegistShopForm());
         return "regist";
     }
 
     @RequestMapping(value = "/regist", params = "ge", method = RequestMethod.POST)
-    public String regist(@Valid @ModelAttribute("registForm") RegistForm registForm, BindingResult result, Model model){
+    public String regist(@Valid @ModelAttribute("registShopForm") RegistShopForm registShopForm, BindingResult result, Model model){
         if (result.hasErrors()){
-            System.out.println("Errors happen.");
-            System.out.println(result.getFieldError().toString());
             return "regist";
         }
-        System.out.println("/regist/regist.");
-        System.out.println(registForm.getName());
+        System.out.println(registShopForm.getShopName());
         return "redirect:/regist";
     }
 }

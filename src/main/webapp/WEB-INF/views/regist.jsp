@@ -8,11 +8,11 @@
 </head>
 <body>
 
-<form:form modelAttribute="registForm">
+<form:form modelAttribute="registShopForm">
 <dl>
-  <dt>名前</dt>
+  <dt>Shop名</dt>
   <dd>
-    <form:input path="name" />
+    <form:input path="shopName" />
     <form:errors path="*"/><br/>
   </dd>
 </dl>
