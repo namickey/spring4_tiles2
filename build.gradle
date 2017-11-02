@@ -27,7 +27,7 @@ tomcat{
 
 dependencies {
     compile("org.springframework:spring-webmvc:4.3.12.RELEASE")
-    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+    compile ("javax.servlet:jstl:1.2")
     compile ("org.hibernate:hibernate-validator:5.3.5.Final")
     compile("org.apache.tiles:tiles-jsp:2.2.2")
     compile("org.slf4j:slf4j-nop:1.5.8")
