@@ -2,7 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
 
-
 <form:form modelAttribute="registShopForm">
 <dl>
   <dt>Shop名</dt>
@@ -13,4 +12,3 @@
 </dl>
 <button type="submit" name="ge">登録</button>
 </form:form>
-
