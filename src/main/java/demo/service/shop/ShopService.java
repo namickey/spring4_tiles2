@@ -1,4 +1,4 @@
-package demo.service;
+package demo.service.shop;
 
 public interface ShopService {
 

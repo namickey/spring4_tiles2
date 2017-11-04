@@ -11,6 +11,6 @@
 あいう
 <c:out value="${name}"/>
 </p>
-<img src="img/dog-puppy.jpeg" style="height:30%;width:30%;" />
+<img src="<c:url value='/img/dog-puppy.jpeg'/>" style="height:30%;width:30%;" />
 </body>
 </html>

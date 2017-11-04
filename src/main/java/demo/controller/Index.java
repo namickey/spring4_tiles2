@@ -13,12 +13,4 @@ public class Index {
     public String index(){
         return "index";
     }
-
-    @RequestMapping("/greet")
-    public String greeting(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model) {
-        System.out.println("greet");
-        model.addAttribute("name", name);
-        System.out.println(name);
-        return "greet";
-    }
 }
