@@ -8,8 +8,8 @@
 <body>
 
 <li>
-<ul><a href="greeting">greeting</a></ul>
-<ul><a href="regist">regist</a></ul>
+<ul><a href="greet">greet</a></ul>
+<ul><a href="shop/regist/index">regist</a></ul>
 </li>
 
 </body>

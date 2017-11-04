@@ -17,21 +17,21 @@ import javax.validation.Valid;
 public class RegistShopController {
 
     @Autowired
-    ShopService shopService;
+    private ShopService shopService;
 
-    @RequestMapping(value = "/regist", method = RequestMethod.GET)
+    @RequestMapping(value = "/shop/regist/index", method = RequestMethod.GET)
     public String index(Model model){
         model.addAttribute("registShopForm", new RegistShopForm());
-        return "regist";
+        return "shop/regist";
     }
 
-    @RequestMapping(value = "/regist", params = "ge", method = RequestMethod.POST)
-    public String regist(@Valid @ModelAttribute("registShopForm") RegistShopForm registShopForm, BindingResult result, Model model){
+    @RequestMapping(value = "/shop/regist/regist", method = RequestMethod.POST)
+    public String regist(@Valid @ModelAttribute("registShopForm") RegistShopForm registShopForm, BindingResult result){
         if (result.hasErrors()){
-            return "regist";
+            return "shop/regist";
         }
         System.out.println("RegistShopController.regist:" + registShopForm.getShopName());
         shopService.regist(registShopForm.getShopName());
-        return "redirect:/regist";
+        return "redirect:index";
     }
 }
