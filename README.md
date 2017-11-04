@@ -20,20 +20,25 @@
     │   │   └── demo
     │   │       ├── controller
     │   │       │   ├── Index.java
+    │   │       │   ├── hello
+    │   │       │   │   └── GreetController.java
     │   │       │   └── shop
     │   │       │       ├── RegistShopController.java
     │   │       │       └── RegistShopForm.java
     │   │       └── service
-    │   │           ├── ShopService.java
-    │   │           └── ShopServiceImpl.java
+    │   │           └── shop
+    │   │               ├── ShopService.java
+    │   │               └── ShopServiceImpl.java
     │   ├── resources
     │   │   ├── META-INF
-    │   │   │   └── messages
-    │   │   │       ├── messages.properties
-    │   │   │       └── messages_ja.properties
-    │   │   ├── spring
-    │   │   │   ├── applicationContext-beans.xml
-    │   │   │   └── applicationContext-webmvc.xml
+    │   │   │   ├── messages
+    │   │   │   │   ├── messages.properties
+    │   │   │   │   └── messages_ja.properties
+    │   │   │   ├── spring
+    │   │   │   │   ├── applicationContext-beans.xml
+    │   │   │   │   └── applicationContext-webmvc.xml
+    │   │   │   └── tiles
+    │   │   │       └── tiles.xml
     │   │   └── static
     │   │       └── img
     │   │           └── dog-puppy.jpeg
@@ -43,11 +48,11 @@
     │           │   ├── common
     │           │   │   ├── layout.jsp
     │           │   │   └── top.jsp
-    │           │   ├── greet.jsp
+    │           │   ├── hello
+    │           │   │   └── greet.jsp
     │           │   ├── index.jsp
-    │           │   ├── shop
-    │           │   │   └── regist.jsp
-    │           │   └── tiles.xml
+    │           │   └── shop
+    │           │       └── regist.jsp
     │           └── web.xml
 ```
 
