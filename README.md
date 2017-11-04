@@ -11,7 +11,6 @@
 * gradle:3.2.1  
 
 ## Tree
-
 ```
 ├── README.md
 ├── build.gradle
@@ -20,7 +19,7 @@
     │   ├── java
     │   │   └── demo
     │   │       ├── controller
-    │   │       │   ├── Hello.java
+    │   │       │   ├── Index.java
     │   │       │   └── shop
     │   │       │       ├── RegistShopController.java
     │   │       │       └── RegistShopForm.java
@@ -46,7 +45,8 @@
     │           │   │   └── top.jsp
     │           │   ├── greet.jsp
     │           │   ├── index.jsp
-    │           │   ├── regist.jsp
+    │           │   ├── shop
+    │           │   │   └── regist.jsp
     │           │   └── tiles.xml
     │           └── web.xml
 ```
