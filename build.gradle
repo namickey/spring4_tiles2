@@ -39,3 +39,7 @@ dependencies {
             "org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}",
             "org.apache.tiles:tiles-jsp:2.2.2"
 }
+
+tomcatRun{
+    stopPort = 8090
+}
