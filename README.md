@@ -14,45 +14,42 @@
 ├── README.md
 ├── build.gradle
 └── src
-    ├── main
-    │   ├── java
-    │   │   └── demo
-    │   │       ├── controller
-    │   │       │   ├── Index.java
-    │   │       │   ├── hello
-    │   │       │   │   └── GreetController.java
-    │   │       │   └── shop
-    │   │       │       ├── RegistShopController.java
-    │   │       │       └── RegistShopForm.java
-    │   │       └── service
-    │   │           └── shop
-    │   │               ├── ShopService.java
-    │   │               └── ShopServiceImpl.java
-    │   ├── resources
-    │   │   ├── META-INF
-    │   │   │   ├── messages
-    │   │   │   │   ├── messages.properties
-    │   │   │   │   └── messages_ja.properties
-    │   │   │   ├── spring
-    │   │   │   │   ├── applicationContext-beans.xml
-    │   │   │   │   └── applicationContext-webmvc.xml
-    │   │   │   └── tiles
-    │   │   │       └── tiles.xml
-    │   │   └── static
-    │   │       └── img
-    │   │           └── dog-puppy.jpeg
-    │   └── webapp
-    │       └── WEB-INF
-    │           ├── views
-    │           │   ├── common
-    │           │   │   ├── layout.jsp
-    │           │   │   └── top.jsp
-    │           │   ├── hello
-    │           │   │   └── greet.jsp
-    │           │   ├── index.jsp
-    │           │   └── shop
-    │           │       └── regist.jsp
-    │           └── web.xml
+    └── main
+        ├── java
+        │   └── demo
+        │       ├── controller
+        │       │   ├── hello
+        │       │   │   └── GreetController.java
+        │       │   └── shop
+        │       │       ├── RegistShopController.java
+        │       │       └── RegistShopForm.java
+        │       └── resolver
+        │           └── UserAgentViewResolver.java
+        ├── resources
+        │   ├── META-INF
+        │   │   ├── messages
+        │   │   │   ├── messages.properties
+        │   │   │   └── messages_ja.properties
+        │   │   ├── spring
+        │   │   │   ├── applicationContext-beans.xml
+        │   │   │   └── applicationContext-webmvc.xml
+        │   │   └── tiles
+        │   │       └── tiles.xml
+        │   └── static
+        │       └── img
+        │           └── dog-puppy.jpeg
+        └── webapp
+            ├── WEB-INF
+            │   ├── views
+            │   │   ├── common
+            │   │   │   ├── layout.jsp
+            │   │   │   └── top.jsp
+            │   │   ├── hello
+            │   │   │   └── greet.jsp
+            │   │   └── shop
+            │   │       └── regist.jsp
+            │   └── web.xml
+            └── index.jsp
 ```
 
 ## Install gradle
