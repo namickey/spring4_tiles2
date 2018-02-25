@@ -1,6 +1,5 @@
 package demo.controller.shop;
 
-import demo.service.shop.ShopService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,9 +15,6 @@ import javax.validation.Valid;
 @Controller
 public class RegistShopController {
 
-    @Autowired
-    private ShopService shopService;
-
     @RequestMapping(value = "/shop/regist/index", method = RequestMethod.GET)
     public String index(Model model){
         model.addAttribute("registShopForm", new RegistShopForm());
@@ -31,7 +27,7 @@ public class RegistShopController {
             return "shop/regist";
         }
         System.out.println("RegistShopController.regist:" + registShopForm.getShopName());
-        shopService.regist(registShopForm.getShopName());
+
         return "redirect:index";
     }
 }

@@ -1,14 +1,13 @@
 # spring4_tiles2
 
-## Summary
-* sprintframework-webmvc:4.3.12.RELEASE  
-* apache-tiles:2.2.2  
-* hibernate-validator:5.3.5.Final  
-* jsp  
-* jstl:1.2  
-* servlet-api:2.5  
-* lombok:1.16.18  
-* gradle:3.2.1  
+## Dependencies
+* org.springframework:spring-webmvc:4.3.12.RELEASE
+* org.hibernate:hibernate-validator:5.3.5.Final
+* org.apache.tiles:tiles-jsp:2.2.2
+* org.slf4j:slf4j-nop:1.5.8
+* javax.servlet:jstl:1.2
+* org.projectlombok:lombok:1.16.18
+* javax.servlet:servlet-api:2.4
 
 ## Tree
 ```
@@ -56,9 +55,18 @@
     │           └── web.xml
 ```
 
+## Install gradle
+https://gradle.org/
+
 ## Execute
 $ gradle tomcatRun
-
 http://localhost:8080/demo
 
-
+## Proxy
+Accessing the web through a HTTP proxy.
+```C:/Users/<username>/.gradle/gradle.properties
+systemProp.http.proxyHost=proxyhost
+systemProp.http.proxyPort=8080
+systemProp.https.proxyHost=proxyhost
+systemProp.https.proxyPort=8080
+```
