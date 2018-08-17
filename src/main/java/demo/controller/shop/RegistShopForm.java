@@ -8,7 +8,7 @@ import javax.validation.constraints.Size;
 
 @Data
 public class RegistShopForm {
-
+    //–¼‘O
     @Size(max = 2)
     private String shopName;
 

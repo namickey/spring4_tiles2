@@ -17,6 +17,7 @@ public class RegistShopController {
 
     @RequestMapping(value = "/shop/regist/index", method = RequestMethod.GET)
     public String index(Model model){
+        //‚ 
         model.addAttribute("registShopForm", new RegistShopForm());
         return "shop/regist";
     }
